@@ -1,0 +1,141 @@
+body {
+    margin:0;
+    padding:0;
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   font-family: 'Permanent Marker', cursive;
+   font-size: 40px;
+   background-color: black;
+}
+header p {
+margin: 10px;
+}
+.gameTable{
+display:flex;
+flex-direction: row;
+width: 100%;
+height: 500px;
+position: relative;
+}
+.playTable {
+    width: 60%;
+    border: 1px solid black;
+}
+.rock{
+    font-size: 100px;
+      border: 2px dashed black;
+     padding: 10px;
+     width: 100px;
+     height: 100px;
+}
+.rock:hover{
+    transform: scale(1.2);
+    border: 2px solid black;
+}
+.rockResult{
+    font-size: 100px;
+    color:white;
+    border: 2px solid white;
+    padding: 10px;
+     width: 100px;
+     height: 100px;
+     margin: 50px;
+}
+.paper{
+    font-size: 100px;
+    border: 2px dashed black;
+     padding: 10px;
+     width: 100px;
+     height: 100px;
+}
+.paper:hover{
+    transform: scale(1.2);
+    border: 2px solid black;
+}
+.paperResult{
+    font-size: 100px;
+    color:white;
+    border: 2px solid white;
+    padding: 10px;
+     width: 100px;
+     height: 100px;
+     margin: 50px;
+}
+.scissors{  
+    font-size: 100px;
+    border: 2px dashed black;
+     padding: 10px;
+     width: 100px;
+     height: 100px;
+}
+.scissors:hover{
+    transform: scale(1.2);
+    border: 2px solid black;
+}
+.playTableFirstRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+}
+.playTableSecondRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+}
+.playTableSecondRow > p{
+    margin: 0;
+}
+.result{
+    position: absolute;
+    width: 750px;
+    height: 450px;
+    border: 1px solid black;
+    left: 5%;
+    top: 5%;
+    background-color: black;
+    display: none;
+}
+.resultBorder{
+    border: 2px solid white;
+    margin: 10px;
+    width: 97%;
+    height:94%;
+  
+}
+.matchScore{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.playTableThirdRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+.winTable {
+    width: 40%;
+    border: 1px solid red;
+}
+.newGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end ;
+    margin-right: 10px;
+}
+

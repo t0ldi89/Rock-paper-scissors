@@ -43,7 +43,7 @@ position: relative;
     padding: 10px;
      width: 100px;
      height: 100px;
-     margin: 50px;
+     margin: 50px 50px 0 50px ;
 }
 .paper{
     font-size: 100px;
@@ -63,7 +63,7 @@ position: relative;
     padding: 10px;
      width: 100px;
      height: 100px;
-     margin: 50px;
+     margin: 50px 50px 0 50px ;
 }
 .scissors{  
     font-size: 100px;
@@ -75,6 +75,15 @@ position: relative;
 .scissors:hover{
     transform: scale(1.2);
     border: 2px solid black;
+}
+.scissorsResult{
+    font-size: 100px;
+    color:white;
+    border: 2px solid white;
+    padding: 10px;
+     width: 100px;
+     height: 100px;
+     margin: 50px 50px 0 50px ;
 }
 .playTableFirstRow{
     display: flex;
@@ -109,11 +118,37 @@ position: relative;
     height:94%;
   
 }
+.yourChoice > p{
+color:white;
+font-family: 'Permanent Marker', cursive;
+margin: 0;
+margin-left: 50px;
+font-size: 20px;
+}
+.cpuChoice > p{
+    color:red;
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.resultSign{
+    color: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 150px;
+    font-weight: bold;
+}
+.resultSign > p{
+    margin: 0;
+}
 .matchScore{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    align-items: center;
 }
 .playTableThirdRow{
     display: flex;
@@ -121,7 +156,16 @@ position: relative;
     justify-content: center;
     height: 40%;
 }
-
+.score{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
 .winTable {
     width: 40%;
     border: 1px solid red;

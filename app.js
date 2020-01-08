@@ -226,13 +226,7 @@ nextRound.addEventListener('click', function(){
         nextRound.style.color = 'white'
 
         nextRound.addEventListener('click', function(){
-            var deletePLayerScore = document.querySelectorAll('.playerScoreList li')
-            deletePLayerScore.parentElement.removeChild(deletePLayerScore)
-            var deleteCpuScore = document.querySelector('.cpuScoreList li')
-            deleteCpuScore.removeChild('li');
-            playerPoints = 0;
-            cpuPoints = 0;
-            result.style.display = 'none'
+            location.reload()
         })
     }else{
         result.style.display = 'none'
